@@ -42,10 +42,8 @@ jobs:
       - name: 打包 tgz
         run: npm pack
 
-      - name: 发布到 npm
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: 发布到 npm（Trusted Publishing / OIDC）
+        run: npm publish --provenance
 
       - name: 创建 GitHub Release 并上传 tgz
         uses: softprops/action-gh-release@v2
