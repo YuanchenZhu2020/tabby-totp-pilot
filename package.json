@@ -1,6 +1,6 @@
 {
   "name": "tabby-totp-pilot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Tabby plugin that auto-fills TOTP/MFA codes for SSH logins, handling keyboard-interactive prompts so you can authenticate without leaving the terminal.",
   "keywords": [
     "tabby-plugin",

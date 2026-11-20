@@ -4,7 +4,7 @@ English | [中文](README.zh-CN.md)
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![Tabby](https://img.shields.io/badge/Tabby-1.0.235-black)
+![Tabby](https://img.shields.io/badge/Tabby-1.0.238-black)
 
 A Tabby terminal plugin: for SSH connections the user has explicitly registered, it generates and submits standard TOTP codes when the server requests a dynamic verification code, and stays out of the way otherwise.
 

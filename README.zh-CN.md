@@ -4,7 +4,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
-![Tabby](https://img.shields.io/badge/Tabby-1.0.235-black)
+![Tabby](https://img.shields.io/badge/Tabby-1.0.238-black)
 
 一个 Tabby 终端插件：对用户保存的 SSH 连接，在服务器要求动态验证码时自动生成并提交标准 TOTP 验证码。
 

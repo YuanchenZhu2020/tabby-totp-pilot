@@ -7,6 +7,18 @@ export interface ChangelogEntry {
 
 export const CHANGELOG_ENTRIES: ChangelogEntry[] = [
     {
+        version: '1.0.1',
+        date: '2026-11-20',
+        changes: {
+            zh: [
+                'README 兼容徽标更新：Tabby 1.0.238',
+            ],
+            en: [
+                'README compatibility badge updated to Tabby 1.0.238',
+            ],
+        },
+    },
+    {
         version: '1.0.0',
         date: '2026-11-20',
         changes: {
