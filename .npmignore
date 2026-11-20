@@ -1,0 +1,24 @@
+# 发布内容以 package.json 的 files 白名单为准（dist、README.md、README.en.md、LICENSE）。
+# 本文件是第二道防线：files 白名单失效或被调整时，以下内容仍然不会进入 npm 包。
+
+# 源码与测试
+src/
+test/
+
+# 文档与配置
+docs/
+config.yaml
+
+# 构建中间产物与本地产物
+.test-dist/
+*.tgz
+*.log
+
+# 版本声明构建时被 rootDir 带入的 package.json 副本（运行时版本由 BOOTSTRAP_DATA 与 bundle 内副本提供）
+dist/types/package.json
+
+# 环境目录
+node_modules/
+.git/
+.github/
+.vscode/

@@ -1,0 +1,6 @@
+import './config-storage.test'
+import './prompt-accessor.test'
+import './prompt.test'
+import './rules.test'
+import './totp.test'
+import './version.test'

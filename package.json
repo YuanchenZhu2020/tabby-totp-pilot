@@ -1,0 +1,60 @@
+{
+  "name": "tabby-totp-pilot",
+  "version": "1.0.0",
+  "description": "A Tabby plugin that auto-fills TOTP/MFA codes for SSH logins, handling keyboard-interactive prompts so you can authenticate without leaving the terminal.",
+  "keywords": [
+    "tabby-plugin",
+    "ssh",
+    "totp",
+    "2fa",
+    "mfa"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/types/src/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test .test-dist/test/all.test.js",
+    "build:types": "tsc -p tsconfig.types.json",
+    "build": "npm run typecheck && webpack --config webpack.config.js && node -e \"require('fs').rmSync('dist/types',{recursive:true,force:true})\" && npm run build:types",
+    "pack:plugin": "npm run test && npm run build && npm pack"
+  },
+  "author": "Tabby TOTP Pilot contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuanchenZhu2020/tabby-totp-pilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YuanchenZhu2020/tabby-totp-pilot/issues"
+  },
+  "homepage": "https://github.com/YuanchenZhu2020/tabby-totp-pilot#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@angular/animations": "^15.2.0",
+    "@angular/common": "^15.2.0",
+    "@angular/compiler": "^15.2.0",
+    "@angular/core": "^15.2.0",
+    "@angular/forms": "^15.2.0",
+    "@angular/platform-browser": "^15.2.0",
+    "@angular/platform-browser-dynamic": "^15.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^14.2.0",
+    "@types/node": "20.3.1",
+    "rxjs": "^7.8.1",
+    "tabby-core": "1.0.231-nightly.0",
+    "tabby-settings": "1.0.231-nightly.0",
+    "tabby-ssh": "1.0.231-nightly.0",
+    "tabby-terminal": "1.0.231-nightly.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "4.9.5",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

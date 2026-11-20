@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.test-dist/
+
+# dev docs
+docs/
+
+# Packaging
+*.tgz
+
+# Logs & OS
+*.log
+.DS_Store
+Thumbs.db
